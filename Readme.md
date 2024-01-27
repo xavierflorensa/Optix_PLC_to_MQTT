@@ -1,11 +1,11 @@
 ﻿<a name="_toc157191124"></a>Optix PLC to MQTT
-# Contents
+### Contents
 [1.	Configuring an application as an MQTT client](#_toc157245591)
 
 [2.	PLC data and MQTT](#_toc157245592)
 
 
-<a name="_toc157245591"></a>1. Configuring an application as an MQTT client
+# <a name="_toc157245591"></a>1. Configuring an application as an MQTT client
 
 This example is using a cloud public broker like test.mosquitto.org
 
@@ -116,97 +116,65 @@ First let’s get PLC data
 
 <https://www.rockwellautomation.com/docs/en/factorytalk-optix/1-00/contents-ditamap/getting-started/quick-start/configure-variables/import-tag-variables.html>
 
-![Graphical user interface, text, application, email
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.024.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 024](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/77064d20-d034-4c88-82a6-5955fffe7b2e)
 
 First of all create a communications driver
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.025.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 025](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/1e412caf-1cf8-4752-bc23-71f9b0791e0f)
 
 Add a new station
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.026.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 026](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/0ade5d47-1a1e-44a3-9322-63f7d7ae3e81)
 
 Go to configure connected device
 
-![A picture containing text
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 027](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/3f4ef696-6c1d-47f1-a610-78581131b55f)
 
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.027.png)
-
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.028.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 028](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/3261b443-538b-4f5a-8abf-30d91542cdfe)
 
 Continue as we did on previous sections 2 until you reach this point
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.029.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 029](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/ed1db1fc-d2d4-449c-a378-3c95925945e5)
 Verify that the Tag is there
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.030.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 030](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/c497498b-cb5b-41c8-88a9-57c7221b5611)
 
 Now let’s display the PLC data on a new text label
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.031.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 031](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/efbf4e04-413c-4ea6-ab81-2e48bcbba712)
 Now let’s try to publish the data from PLC variable
 
 We did a try that is publishing PLC data to Mosquitto, without writing any script, just with dynamic links:
 
 Modify the value on the PLC
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.032.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 032](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/5922a917-c95f-44f8-9b3a-34ebd174f72d)
 
 Then look at the Optix application
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.033.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 033](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/51f22616-17d5-4827-88dc-919e5062aa5b)
 
 We wanted just to write on the PLC, but on the other hand if we click the button publish, then we are writing a random value on the PLC!!!
 
-![Graphical user interface, text, application
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 034](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/597736a6-be26-438a-a9a2-87d1ac843762)
 
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.034.png)
-
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.035.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 035](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/b17b2629-ee1a-4163-bcfa-c25086fef787)
 
 This is how to make this link
 
 Just go to the Variable1 properties under model
 
-![Graphical user interface, text, application, Word
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.036.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 036](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/cd7058cf-dea6-492c-9af3-5ed18d2cb210)
 
 Then edit the link
 
 Like this
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.037.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 037](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/8542bad4-6092-498d-b0da-fe1c852c8fdf)
 
 You will get this
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.038.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 038](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/5b917097-4ffa-4d15-ad86-44f1b0a2bd1c)
 
 And that’s all, you have the variables linked in both directions
 
@@ -214,33 +182,20 @@ But the problem when writing to the PLC is that the variable is random. Let’s 
 
 Now we are able to write the desired value on the PLC as soon as we hit enter
 
-![Graphical user interface, application, Word
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 039](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/457b9b2a-0d99-4929-b2e5-8011e1992e91)
 
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.039.png)
-
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.040.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 040](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/78fb2088-296f-4373-8afb-4d4730154ec0)
 Let’s see how to do it
 
 Let’s create an editable Label
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.041.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 041](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/e758b88b-1014-4bf8-9e79-26e624643e11)
 Like this
 
-![Graphical user interface, application, table
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.042.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 042](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/3220d529-65db-4b59-9b8f-ca91e01e7363)
 And on the text property, link to the variable 
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.043.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 043](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/1ea1bc06-6b6f-4202-9598-071a12956139)
 
 We are still writing a random variable with the publish button.
 
@@ -248,17 +203,13 @@ In order to cancel this we can try to comment this line on the code
 
 Click on the code icon
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.044.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 044](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/51b51430-9859-4deb-8861-9a7dc2fdcb90)
 
 And comment this line
 
 Then save on Visual Studio Code
 
-![Text
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.045.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 045](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/01825444-5bb0-46d6-aa2e-cbe2fcbd5dff)
 
 Now click on play and try
 
@@ -268,9 +219,7 @@ But you do not need to click the publish button to write on the PLC.
 
 But you have to click on publish in order to send per MQTT
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.046.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 046](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/0943e424-7e91-4e04-b99f-429944d85908)
 
 But we are not yet able to write on the PLC from an MQTT client like a mobile phone.
 
@@ -278,39 +227,28 @@ We have to do two steps
 
 First of all, modify on the subscriber code  this line
 
-![](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.047.png)
-
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 047](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/feade160-5a2e-4099-88a1-73dc78194807)
 And leaving like this
 
-![](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.048.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 048](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/c0435249-fb1f-4843-8a02-c73f68f78aba)
 
 Then save on Visual Studio Code
 
 Now we do not have the string like before
 
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.049.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 049](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/bebfcaf4-a8ad-49c0-aec8-b1cc79487cdb)
 
 On the other hand, we have to link the variable Message to the PLC Tag like this
 
-![Graphical user interface, text, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.050.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 050](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/dda91072-f722-49c8-8db8-49c2aaf5f870)
 
 Now we are writing on the PLC from a MQTT client like a Mobile Phone
 
-![Graphical user interface, application
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 051](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/32543bac-cf40-429e-b2ee-cb79ad6cfeb6)
 
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.051.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 052](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/cbfc4045-ffc8-4229-96bd-ff9a635568e0)
 
-![Graphical user interface, text, application, email
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.052.png)
-
-![Graphical user interface, application
-
-Description automatically generated](Aspose.Words.faea257d-ffd2-4c25-b4b1-a8553f3d92b0.053.png)
+![Aspose Words faea257d-ffd2-4c25-b4b1-a8553f3d92b0 053](https://github.com/xavierflorensa/Optix_PLC_to_MQTT/assets/55208134/bb8e93bf-067b-46e8-8f30-59d72f43dee5)
 
 As you can see on this video
 
