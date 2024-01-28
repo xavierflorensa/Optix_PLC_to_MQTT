@@ -258,7 +258,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 380.0
+    Value: 480.0
   - Name: PublisherLogic
     Type: NetLogic
     Children:
@@ -352,7 +352,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 10.0
+      Value: 116.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -381,7 +381,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 146.0
   - Name: TextBox1
     Type: TextBox
     Children:
@@ -414,7 +414,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 162.0
   - Name: Label1
     Type: Label
     Children:
@@ -432,7 +432,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 146.0
   - Name: Label2
     Type: Label
     Children:
@@ -450,7 +450,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 166.0
   - Name: Label3
     Type: Label
     Children:
@@ -468,7 +468,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 110.0
+      Value: 216.0
   - Name: TextBox2
     Type: TextBox
     Children:
@@ -501,7 +501,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 110.0
+      Value: 216.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -524,7 +524,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 15.0
+      Value: 121.0
   - Name: EditableLabel1
     Type: EditableLabel
     Children:
@@ -552,7 +552,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 15.0
+      Value: 121.0
   - Name: Label5
     Type: Label
     Children:
@@ -570,7 +570,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 85.0
+      Value: 191.0
   - Name: TextBox3
     Type: TextBox
     Children:
@@ -603,7 +603,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
+      Value: 186.0
   - Name: CircularGauge1
     Type: CircularGauge
     Children:
@@ -651,7 +651,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 150.0
+      Value: 256.0
     - Name: ValueChangeBehaviour
       Type: BaseDataVariableType
       DataType: ValueChangeBehaviour
@@ -661,3 +661,20 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "/Objects/Optix_PLC_to_MQTT/Model/Variable1"
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=16;%PROJECTDIR%/Logo.JPG"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
